@@ -1,3 +1,6 @@
+use clap::Parser;
+use rust_cli_template::cli::CliArgs;
+
 fn main() {
-    println!("Hello, world!");
+    let args = CliArgs::parse();
 }
