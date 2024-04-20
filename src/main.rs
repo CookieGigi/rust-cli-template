@@ -1,6 +1,6 @@
 use anyhow::Result;
 use clap::Parser;
-use rust_cli_template::cli::CliArgs;
+use rust_cli_template::{cli::CliArgs, errors::errors_handling, run};
 use tracing_log::AsTrace;
 
 fn main() -> Result<()> {
@@ -12,5 +12,8 @@ fn main() -> Result<()> {
         .with_max_level(args.verbose.log_level_filter().as_trace())
         .init();
 
-    Ok(())
+    match run() {
+        Err(error) => errors_handling(error),
+        Ok(()) => Ok(()),
+    }
 }
