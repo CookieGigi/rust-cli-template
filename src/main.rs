@@ -14,6 +14,10 @@ fn main() -> Result<()> {
 
     match run() {
         Err(error) => errors_handling(error),
-        Ok(()) => Ok(()),
+        Ok(()) => {
+            // Success Message
+            tracing::info!("Success !");
+            Ok(())
+        }
     }
 }
