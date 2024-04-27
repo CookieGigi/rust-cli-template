@@ -1,11 +1,14 @@
 use anyhow::Result;
 use clap::Parser;
-use rust_cli_template::{cli::CliArgs, errors::errors_handling, run};
+use rust_cli_template::{cli::CliArgs, config::Config, errors::errors_handling, run};
 use tracing_log::AsTrace;
 
 fn main() -> Result<()> {
     // Get command line arguments
     let args = CliArgs::parse();
+
+    // Get config
+    let _config: Config = confy::load("rust-cli-template", None)?;
 
     // Initialize trace
     tracing_subscriber::fmt()
