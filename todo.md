@@ -4,4 +4,4 @@
 [X] Integration test (assert_cmd, predicates)
 [X] CI github
 [X] Configuration
-
+[ ] Github best practice (README, ...)
