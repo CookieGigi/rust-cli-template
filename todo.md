@@ -2,6 +2,6 @@
 [X] Error handling (anyhow, exitcode)
 [X] Log/tracing handling (tracing, clap-verbosity-flag, tracing-log, tracing-subscriber)
 [X] Integration test (assert_cmd, predicates)
-[ ] CI github
-[ ] Configuration
+[X] CI github
+[X] Configuration
 
