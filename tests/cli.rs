@@ -1,0 +1,8 @@
+use assert_cmd::{cargo::CommandCargoExt, Command};
+
+#[test]
+fn cli_test() -> Result<(), Box<dyn std::error::Error>> {
+    let mut cmd = Command::cargo_bin("rust-cli-template")?;
+
+    Ok(())
+}
