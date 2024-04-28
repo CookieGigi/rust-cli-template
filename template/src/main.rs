@@ -1,6 +1,6 @@
 use anyhow::Result;
 use clap::Parser;
-use {{project-name}}::{cli::CliArgs, config::Config, errors::errors_handling, run};
+use {{crate_name}}::{cli::CliArgs, config::Config, errors::errors_handling, run};
 use tracing_log::AsTrace;
 
 fn main() -> Result<()> {
