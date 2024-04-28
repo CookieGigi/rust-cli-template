@@ -5,3 +5,7 @@
 [X] CI github
 [X] Configuration
 [ ] Github best practice (README, ...)
+[ ] Cargo generate
+[ ] Upgrade CI with [template](https://github.com/rust-github/template/tree/main)
+
+
