@@ -1,6 +1,6 @@
 use anyhow::Result;
 use clap::Parser;
-use rust_cli_template::{cli::CliArgs, config::Config, errors::errors_handling, run};
+use {{project-name}}::{cli::CliArgs, config::Config, errors::errors_handling, run};
 use tracing_log::AsTrace;
 
 fn main() -> Result<()> {
@@ -8,7 +8,7 @@ fn main() -> Result<()> {
     let args = CliArgs::parse();
 
     // Get config
-    let _config: Config = confy::load("rust-cli-template", None)?;
+    let _config: Config = confy::load("{{project-name}}", None)?;
 
     // Initialize trace
     tracing_subscriber::fmt()

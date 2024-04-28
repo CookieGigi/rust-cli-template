@@ -5,7 +5,13 @@
 [X] CI github
 [X] Configuration
 [ ] Github best practice (README, ...)
-[ ] Cargo generate
+[X] Cargo generate
+
+# Possible Improvements
 [ ] Upgrade CI with [template](https://github.com/rust-github/template/tree/main)
+[ ] [opinionated-rust-template](https://github.com/tomkarw/opinionated-rust-template)
+
+
+
 
 
