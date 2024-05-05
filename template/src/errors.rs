@@ -1,5 +1,6 @@
 use anyhow::Result;
 
+#[cfg(not(tarpaulin_include))]
 pub fn errors_handling(error: anyhow::Error) -> Result<()> {
     tracing::error!("{:#}", error);
 

@@ -3,6 +3,7 @@ use clap::Parser;
 use {{crate_name}}::{cli::CliArgs, config::Config, errors::errors_handling, run};
 use tracing_log::AsTrace;
 
+#[cfg(not(tarpaulin_include))]
 fn main() -> Result<()> {
     // Get command line arguments
     let args = CliArgs::parse();
